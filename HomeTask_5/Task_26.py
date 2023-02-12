@@ -4,11 +4,17 @@
 # A = 3; B = 5 -> 243 (3**5)
 # A = 2; B = 3 -> 8
 
+
 a = int(input('Введите первое число A: '))
 b = int(input('Введите второе число B: '))
+
+
 def res(a, b):
-    if b == 1:
+    if b == 0:
+        return 1
+    elif b == 1:
         return a
-    if b != 1:
-        return (a * res(a, b - 1))  
+    return a * res(a, b - 1) 
+
+
 print(res(a, b))
