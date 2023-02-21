@@ -7,16 +7,16 @@
 # 4
 
 
-a = int(input('Введите первое число a: '))
-b = int(input('Введите второе число b: '))
-
-
 def sum_1(a, b):
     if b > a:
         a, b = b, a
     elif b == 0:
         return a
     return 1 + sum_1(a, b - 1)
+
+
+a = int(input('Введите первое число a: '))
+b = int(input('Введите второе число b: '))
 
 
 print(sum_1(a, b))
