@@ -1,8 +1,8 @@
 
-def arithmetic_prog(a1: int, diff: int, n:int):
+def arithmetic_prog(a1: int, d: int, n:int):
     sequence = [a1]
     for i in range(2, n + 1):
-        sequence.append(a1 + (i - 1) * diff)
+        sequence.append(a1 + (i - 1) * d)
     return sequence
 
 
