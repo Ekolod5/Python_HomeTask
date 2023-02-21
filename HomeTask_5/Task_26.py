@@ -5,16 +5,16 @@
 # A = 2; B = 3 -> 8
 
 
-a = int(input('Введите первое число A: '))
-b = int(input('Введите второе число B: '))
-
-
 def res(a, b):
     if b == 0:
         return 1
     elif b == 1:
         return a
     return a * res(a, b - 1) 
+
+
+a = int(input('Введите первое число A: '))
+b = int(input('Введите второе число B: '))
 
 
 print(res(a, b))
