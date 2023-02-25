@@ -15,24 +15,6 @@
 # 6   12  18  24  30  36 
 
 
-# matrix = [
-#     [1, 2, 3, 4, 5, 6],
-#     [2, 21, 31, 41, 5, 6],
-#     [3, 22, 32, 42, 5, 6],
-#     [4, 23, 33, 43, 5, 6],
-#     [5, 24, 34, 44, 5, 6],
-#     [6, 25, 35, 45, 5, 6]
-# ]
-# matr = []
-# for i in range(1, 7):
-#     temp = []
-#     for j in range(1, 7):
-#         temp.append(i*j)
-#     matr.append(temp)
-# for i in matr:
-#     print(''.join(f'{n:<4}' for n in i))  
-
-
 def print_operation_table(operation, num_rows = 6, num_columns = 6):
     table = []
     for i in range(1, num_rows + 1):
